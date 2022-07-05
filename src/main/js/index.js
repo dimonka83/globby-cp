@@ -19,7 +19,10 @@ export const copy = async ({
   await globby(patterns, { cwd: baseFrom, absolute: true, ignoreFiles }).then((files) =>
     Promise.all([
       ...files.map((file) =>
-        cp(file, path.resolve(baseTo, to, path.relative(baseFrom, file))),
+        cp(
+          file,
+          path.resolve(baseTo, to, file.startsWith(baseFrom) ? path.relative(baseFrom, file) : path.basename(file))
+        ),
       ),
       ...dirs.map((dir) => cp(dir, path.resolve(baseTo, to))),
     ]),

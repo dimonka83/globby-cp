@@ -6,7 +6,6 @@ import {copy} from './index.js'
 
 const camelize = s => s.replace(/-./g, x=>x[1].toUpperCase())
 const normalizeFlags = (flags = {}) => Object.entries(flags).reduce((acc, [k, v]) => ({...acc, [camelize(k)]: v}), {})
-
 const argv = normalizeFlags(minimist(process.argv.slice(2)))
 
 if (argv.help || argv.h) {
