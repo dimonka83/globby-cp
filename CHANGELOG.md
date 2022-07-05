@@ -1,3 +1,8 @@
+## [1.1.0](https://github.com/antongolub/globby-cp/compare/v1.0.1...v1.1.0) (2022-07-05)
+
+### Features
+* feat: add index.d.ts ([dd40c19](https://github.com/antongolub/globby-cp/commit/dd40c19128a910cf332725b32aa86514d97cbd06))
+
 ## [1.0.1](https://github.com/antongolub/globby-cp/compare/v1.0.0...v1.0.1) (2022-07-05)
 
 ### Fixes & improvements
