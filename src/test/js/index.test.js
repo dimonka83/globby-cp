@@ -1,8 +1,8 @@
+import assert from 'node:assert'
+import path from 'node:path'
 import test from 'node:test'
 import * as tempy from 'tempy'
-import assert from 'node:assert'
 import fs from 'fs-extra'
-import path from 'node:path'
 import tinysh from 'tinysh'
 import {copy} from '../../main/js/index.js'
 

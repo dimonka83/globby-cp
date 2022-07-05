@@ -1,5 +1,5 @@
-import fs from 'fs-extra'
 import path from 'node:path'
+import fs from 'fs-extra'
 import {globby} from 'globby'
 
 export const copy = async ({
@@ -10,11 +10,11 @@ export const copy = async ({
   debug = () => {},
   ignoreFiles
 }) => {
+  const {patterns, dirs} = await parseSources(from, baseFrom)
   const cp = (src, dest) => {
     debug('copy', 'from=', src, 'to=', dest)
     return fs.copy(src, dest)
   }
-  const {patterns, dirs} = await parseSources(from, baseFrom)
 
   await globby(patterns, { cwd: baseFrom, absolute: true, ignoreFiles }).then((files) =>
     Promise.all([

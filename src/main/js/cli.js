@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import {copy} from './index.js'
 import { createRequire } from 'node:module'
 import minimist from 'minimist'
+import {copy} from './index.js'
 
 const camelize = s => s.replace(/-./g, x=>x[1].toUpperCase())
 const normalizeFlags = (flags = {}) => Object.entries(flags).reduce((acc, [k, v]) => ({...acc, [camelize(k)]: v}), {})
