@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "globby-boosted file copying util",
   "type": "module",
-  "exports": "./src/main/js/index.js",
+  "exports": {
+    ".": "./src/main/js/index.js"
+  },
   "bin": {
     "globby-cp": "./src/main/js/cli.js",
     "gcp": "./src/main/js/cli.js"
