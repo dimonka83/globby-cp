@@ -19,13 +19,15 @@ npx globby-cp ./* ./foo/bar --ignore-files .gitignore
 | `--base-from`          | Base dir for `from` pattern                        | `process.cwd()` |
 | `--base-to`            | Base dir for `to` argument                         | `process.cwd()` |
 | `--ignore-files`, `-i` | Path to ignoreFile (like .gitignore or .npmignore) |                 |
+| `--version -v`         | Print version                                      |                 |
+| `--help -h`            | Show help                                          |                 |
 
 
 ### JS API
 ```js
 import {copy} from 'globby-cp'
 
-await ({
+await copy({
   from:       'src/**/*.js',
   to:         'dist/',
   baseFrom,   // process.cwd()

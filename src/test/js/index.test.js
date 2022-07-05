@@ -17,7 +17,7 @@ test('copy() abs to abs (JS API)', async (t) => {
   await fs.outputFile(footxt, 'foo')
 
   await copy({from: footxt, to})
-  assert.equal(await fs.readFile(path.resolve(to, 'foo.txt')), 'foo')
+  assert.equal((await fs.readFile(path.resolve(to, 'foo.txt'))).toString().trim(), 'foo')
 })
 
 test('copy() abs to abs (CLI)', async (t) => {
@@ -30,3 +30,12 @@ test('copy() abs to abs (CLI)', async (t) => {
   assert.equal(await fs.readFile(path.resolve(to, 'bar.txt')), 'bar')
 })
 
+test('CLI --help', async (t) => {
+  const help = childProcess.execSync(`node ${__dirname}/../../main/js/cli.js --help`).toString()
+  assert.ok(help.includes('Usage:'))
+})
+
+test('CLI --version', async (t) => {
+  const version = childProcess.execSync(`node ${__dirname}/../../main/js/cli.js --v`).toString()
+  assert.ok(version.match(/\d+\.\d+\.\d+/))
+})
