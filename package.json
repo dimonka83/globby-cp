@@ -1,0 +1,42 @@
+{
+  "name": "globby-cp",
+  "version": "0.0.2",
+  "description": "globby-boosted file copying util",
+  "type": "module",
+  "exports": "./src/main/js/index.js",
+  "bin": {
+    "globby-cp": "./src/main/js/cli.js",
+    "gcp": "./src/main/js/cli.js"
+  },
+  "scripts": {
+    "test": "yarn link && node ./src/test/js/index.test.js && yarn unlink",
+    "docs": "mkdir -p docs && cp ./README.md ./docs/README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antongolub/globby-cp.git"
+  },
+  "keywords": [
+    "cp",
+    "globby"
+  ],
+  "files": [
+    "src/main"
+  ],
+  "author": "Anton Golub <antongolub@antongolub.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antongolub/globby-cp/issues"
+  },
+  "homepage": "https://github.com/antongolub/globby-cp#readme",
+  "devDependencies": {
+    "link": "^1.5.0",
+    "tempy": "^3.0.0",
+    "tinysh": "^1.0.0"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "globby": "^13.1.2",
+    "minimist": "^1.2.6"
+  }
+}
