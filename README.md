@@ -25,7 +25,6 @@ npx globby-cp ./* ./foo/bar --ignore-files .gitignore
 | `--version -v`         | Print version                                      |                 |
 | `--help -h`            | Show help                                          |                 |
 
-
 ### JS API
 ```js
 import {copy} from 'globby-cp'
