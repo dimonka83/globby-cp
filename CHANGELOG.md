@@ -1,3 +1,8 @@
+## [1.1.1](https://github.com/antongolub/globby-cp/compare/v1.1.0...v1.1.1) (2022-07-07)
+
+### Fixes & improvements
+* docs: mention `--base-*` in CLI help ([2c7c15c](https://github.com/antongolub/globby-cp/commit/2c7c15ca89985196b3378dbfa68b8e55ccfe2f5a))
+
 ## [1.1.0](https://github.com/antongolub/globby-cp/compare/v1.0.1...v1.1.0) (2022-07-05)
 
 ### Features
