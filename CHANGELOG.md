@@ -1,3 +1,8 @@
+## [1.1.2](https://github.com/antongolub/globby-cp/compare/v1.1.1...v1.1.2) (2022-07-29)
+
+### Fixes & improvements
+* docs: mention git-glob-cp ([e9b49c3](https://github.com/antongolub/globby-cp/commit/e9b49c30cec62ee3798a8c644052248d5d65d999))
+
 ## [1.1.1](https://github.com/antongolub/globby-cp/compare/v1.1.0...v1.1.1) (2022-07-07)
 
 ### Fixes & improvements

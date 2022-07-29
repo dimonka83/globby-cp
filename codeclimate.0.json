@@ -1,0 +1,58 @@
+{
+  "ci_service": {
+    "branch": "master",
+    "build_identifier": "",
+    "build_url": "",
+    "commit_sha": "6f839c0d1695c93cd4e23fab2dfef413eed5055a",
+    "committed_at": 1659076301,
+    "name": "true"
+  },
+  "environment": {
+    "gem_version": "3.1.2",
+    "package_version": "",
+    "pwd": "/home/runner/work/globby-cp/globby-cp",
+    "prefix": "/home/runner/work/globby-cp/globby-cp",
+    "rails_root": "",
+    "reporter_version": "0.10.3",
+    "simplecov_root": ""
+  },
+  "git": {
+    "branch": "master",
+    "head": "6f839c0d1695c93cd4e23fab2dfef413eed5055a",
+    "committed_at": 1659076301
+  },
+  "covered_percent": 100,
+  "covered_strength": 0,
+  "line_counts": {
+    "missed": 0,
+    "covered": 96,
+    "total": 96
+  },
+  "source_files": [
+    {
+      "blob_id": "be951a5cc70720715299cd4ff7f1843b4984953a",
+      "coverage": "[3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,1,1,1,1,1,1,1,1,1,1,3]",
+      "covered_percent": 100,
+      "covered_strength": 1.6585365853658536,
+      "line_counts": {
+        "missed": 0,
+        "covered": 41,
+        "total": 41
+      },
+      "name": "src/main/js/cli.js"
+    },
+    {
+      "blob_id": "94661eb16a5579c6043a3419139515b5776e1d7b",
+      "coverage": "[4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,2,2,2,4,4,2,2,2,2,2,2,2,2,2,2,1,1,1,1,2,1,1,2,2,2,2,2]",
+      "covered_percent": 100,
+      "covered_strength": 2.1272727272727274,
+      "line_counts": {
+        "missed": 0,
+        "covered": 55,
+        "total": 55
+      },
+      "name": "src/main/js/index.js"
+    }
+  ],
+  "repo_token": "9238f16743b5a3b5898a6156a1c898cce15a254283aa272edfe41adb41e5545b"
+}
