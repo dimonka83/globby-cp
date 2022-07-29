@@ -39,5 +39,8 @@ await copy({
 })
 ```
 
+### globby-cp + git
+https://github.com/antongolub/git-glob-cp
+
 ## License
 [MIT](./LICENSE)
